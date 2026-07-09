@@ -287,6 +287,7 @@
           }
 
           var $ = function (id) { return document.getElementById(id); };
+          if (window.HFKIT) HFKIT.dress("a2");  /* procedural tufts/flowers/oak, ground-anchored */
           $("a2-sun0").innerHTML = hfSun();
           $("a2-sun1").innerHTML = hfSun();
           $("a2-sun2").innerHTML = hfSun();
@@ -417,6 +418,7 @@
           tl.to("#a2-dim", { opacity: 0.34, duration: 2.6, ease: "sine.inOut" }, 46.8);
           blink(tl, "#a2-bean2sad", 44.9); blink(tl, "#a2-milo2", 45.6);
 
+          if (window.HFKIT) HFKIT.wind(tl, "a2", 50.97);  /* seeded, seek-safe wind sway */
           window.__timelines["a2"] = tl;
         </script>
       </div>

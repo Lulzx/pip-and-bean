@@ -269,6 +269,7 @@
           }
 
           var $ = function (id) { return document.getElementById(id); };
+          if (window.HFKIT) HFKIT.dress("a3");  /* procedural tufts/flowers/oak, ground-anchored */
           $("a3-gray1").innerHTML = hfCloud("#aeb6c2", "#8b94a4");
           $("a3-gray2").innerHTML = hfCloud("#aeb6c2", "#8b94a4");
           $("a3-gray3").innerHTML = hfCloud("#aeb6c2", "#8b94a4");
@@ -382,6 +383,7 @@
           tl.to("#a3-gray3", { x: 500, opacity: 0, duration: 3.5, ease: "sine.in" }, 59.5);
           blink(tl, "#a3-pip3", 50.0); blink(tl, "#a3-milo3b", 56.2); blink(tl, "#a3-bean3", 61.0);
 
+          if (window.HFKIT) HFKIT.wind(tl, "a3", 64.44);  /* seeded, seek-safe wind sway */
           window.__timelines["a3"] = tl;
         </script>
       </div>

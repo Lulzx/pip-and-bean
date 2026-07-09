@@ -23,6 +23,11 @@ seek-safe compositions that render straight to MP4.
   never "dark."
 - **Curved motion** — characters ride the slide along a real **GSAP MotionPath** that
   hugs the chute (steep at the top, flattening into the run-out), not a straight line.
+- **Procedural stage kit** (`lib/stage-kit.js`) — a seeded (deterministic) scenery
+  layer: the oak tree is generated geometry, grass tufts and wildflowers sprout along
+  every ground line, and everything sways in an analytic, seek-safe wind. Generated
+  props measure the real `.ground` element and plant themselves on it — grounding is
+  guaranteed by construction, never by hand-typed pixel offsets.
 - **Playful transitions** — circle-iris wipes, vertical pushes, and a blur crossfade for
   the sad wind-down.
 - **Full voiceover + music + SFX** — narrator, Pip, Bean, and Milo, over soft CC0 music
@@ -54,6 +59,7 @@ For a maximum-quality pass use `npm run render:quality`.
 
 ```
 index.html            root timeline — mounts the five acts + audio tracks
+lib/stage-kit.js      seeded procedural scenery + wind (ground-anchored)
 compositions/a1..a5   the five acts (self-contained HTML compositions)
 frame.md              creative brief: concept, palette, type, audio plan
 script.json           per-line voiceover script (speaker + text)

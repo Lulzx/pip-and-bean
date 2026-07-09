@@ -278,6 +278,7 @@
           }
 
           var $ = function (id) { return document.getElementById(id); };
+          if (window.HFKIT) HFKIT.dress("a5");  /* procedural tufts/flowers/oak, ground-anchored */
           $("a5-sun0").innerHTML = hfSun();
           $("a5-minisun").innerHTML = hfSun();
           $("a5-trio-pip").innerHTML = hfChar("pip", { mouth: "grin" });
@@ -379,6 +380,7 @@
           tl.to("#a5-fade", { opacity: 1, duration: 2.2, ease: "sine.inOut" }, 46.4);
           tl.to("#a5-badge", { opacity: 0, duration: 1.0 }, 47.0);
 
+          if (window.HFKIT) HFKIT.wind(tl, "a5", 48.91);  /* seeded, seek-safe wind sway */
           window.__timelines["a5"] = tl;
         </script>
       </div>

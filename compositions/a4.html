@@ -280,6 +280,7 @@
           }
 
           var $ = function (id) { return document.getElementById(id); };
+          if (window.HFKIT) HFKIT.dress("a4");  /* procedural tufts/flowers/oak, ground-anchored */
           $("a4-milocloud").innerHTML = hfRainCloud();
           $("a4-milo-sad").innerHTML = hfChar("milo", { mouth: "sad", brows: "sadb" });
           $("a4-milo-happy").innerHTML = hfChar("milo", { mouth: "grin", brows: "up", blush: true, c1: "#9b7be0", c2: "#6d51a8", cap: "#ffd34e" });
@@ -357,6 +358,8 @@
           talk(tl, "#a4-milo-b", 25.16, 3.13);
           /* bean plants the flag */
           tl.fromTo("#a4-flag", { opacity: 0, y: -260, rotation: -14 }, { opacity: 1, y: 0, rotation: 0, duration: 0.7, ease: "bounce.out" }, 26.9);
+          /* ...and it flutters in the breeze (pivot at the pole edge) */
+          tl.fromTo("#a4-flag svg path", { rotation: -5 }, { rotation: 6, transformOrigin: "100% 30%", duration: 0.55, ease: "sine.inOut", yoyo: true, repeat: 15 }, 27.6);
           blink(tl, "#a4-pip-b", 21.4); blink(tl, "#a4-bean-b", 24.2); blink(tl, "#a4-milo-b", 26.3);
 
           /* iris P1 → P2 at 28.8 */
@@ -418,6 +421,7 @@
           });
           blink(tl, "#a4-pip-f", 40.0); blink(tl, "#a4-milo-f", 41.2); blink(tl, "#a4-bean-f", 42.0);
 
+          if (window.HFKIT) HFKIT.wind(tl, "a4", 44.43);  /* seeded, seek-safe wind sway */
           window.__timelines["a4"] = tl;
         </script>
       </div>
