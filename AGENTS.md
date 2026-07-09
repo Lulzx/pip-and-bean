@@ -90,3 +90,28 @@ Fix all errors before presenting the result. Inspect warnings should be reviewed
 4. Videos use `muted` with a separate `<audio>` element for the audio track
 5. Sub-compositions use `data-composition-src="compositions/file.html"` to reference other HTML files
 6. Only deterministic logic — no `Date.now()`, no `Math.random()`, no network fetches
+
+## THIS PROJECT — Pip & Bean: The Big Slide Day
+
+Full documentation lives in `docs/` — read it before making changes:
+
+- `docs/ARCHITECTURE.md` — pipeline (script → TTS → timeline → index.html), acts, audio tracks
+- `docs/STAGE-KIT.md` — `lib/stage-kit.js` API and the `data-kit` prop contract
+- `docs/EPISODE.md` — story, cast, act-by-act beats, key timestamps, audio design
+- `docs/WORKFLOW.md` — dev loop, snapshot verification method, render performance
+- `docs/DECISIONS.md` — engineering decisions; read before "improving" anything
+
+Project-critical rules (details + rationale in `docs/DECISIONS.md`):
+
+1. **Never regenerate voice audio casually** — MP3 durations are the timing skeleton;
+   regeneration desyncs all choreography. `gen_tts.py` needs `FISH_AUDIO_API_KEY` (env).
+2. **Slide/castle geometry is canonical** — a2's ladder climb and a4's MotionPath
+   descent are tuned to exact coordinates. Seeds decorate; they never change structure.
+3. **Ground-anchor via the stage kit** (`data-kit` + `data-kit-sink`), never hand-typed
+   `bottom:` offsets on scene props.
+4. **Shared libs go in `index.html`'s head** — mounted sub-composition heads don't
+   re-execute. Kit calls stay guarded: `if (window.HFKIT) …`.
+5. **No em/en dashes in on-screen text** (house style). Bubbles sit on their speakers.
+6. **Verify visually**: after edits run `npm run check` (0 errors) AND snapshot the
+   affected moments (`npx hyperframes snapshot --at <times> --no-end`), then read the
+   contact sheet. Key timestamps: `docs/EPISODE.md`.

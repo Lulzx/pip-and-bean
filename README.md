@@ -47,6 +47,16 @@ seek-safe compositions that render straight to MP4.
 | **Accents** | coral `#FF7A45`, sun `#FFD34E`, grass `#A8D879` |
 | **Cast** | Pip orange `#FF9F4A` · Bean green `#7BC96F` · Milo `#A8A0B5 → #9B7BE0` |
 
+## 📚 Documentation
+
+| doc | what's in it |
+|---|---|
+| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | script→TTS→timeline→render pipeline, acts, audio tracks |
+| [docs/STAGE-KIT.md](docs/STAGE-KIT.md) | the procedural stage kit API + `data-kit` prop contract |
+| [docs/EPISODE.md](docs/EPISODE.md) | story, cast, act-by-act beats, key timestamps |
+| [docs/WORKFLOW.md](docs/WORKFLOW.md) | dev loop, visual verification, render performance |
+| [docs/DECISIONS.md](docs/DECISIONS.md) | engineering decision log — read before changing things |
+
 ## 🚀 Run it
 
 ```bash

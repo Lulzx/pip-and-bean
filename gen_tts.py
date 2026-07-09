@@ -3,7 +3,9 @@
 import json, subprocess, sys, time, urllib.request, os
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-API_KEY = "ed6d3d256de84c8785faf9c7287585b4"
+API_KEY = os.environ.get("FISH_AUDIO_API_KEY")
+if not API_KEY:
+    sys.exit("Set FISH_AUDIO_API_KEY in the environment (never hardcode it).")
 OUT = os.path.join(ROOT, "assets", "voices")
 os.makedirs(OUT, exist_ok=True)
 
