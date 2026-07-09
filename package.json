@@ -1,0 +1,12 @@
+{
+  "name": "tumble-tunes",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.7.45 preview",
+    "check": "npx --yes hyperframes@0.7.45 lint && npx --yes hyperframes@0.7.45 validate && npx --yes hyperframes@0.7.45 inspect",
+    "render": "npx --yes hyperframes@0.7.45 render --gpu --browser-gpu --workers 8",
+    "render:quality": "npx --yes hyperframes@0.7.45 render --quality high",
+    "publish": "npx --yes hyperframes@0.7.45 publish"
+  }
+}

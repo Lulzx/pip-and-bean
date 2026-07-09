@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/MotionPathPlugin.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        background: #fff6e4;
+      }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #fff6e4;
+      }
+      #root > div[data-composition-src] {
+        position: absolute;
+        inset: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="root"
+      data-start="0"
+      data-width="1920"
+      data-height="1080"
+      data-duration="254.2"
+    >
+      <div
+        id="el-a1"
+        data-composition-id="a1"
+        data-composition-src="compositions/a1.html"
+        data-start="0.0"
+        data-duration="45.45"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-a2"
+        data-composition-id="a2"
+        data-composition-src="compositions/a2.html"
+        data-start="45.45"
+        data-duration="50.97"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-a3"
+        data-composition-id="a3"
+        data-composition-src="compositions/a3.html"
+        data-start="96.42"
+        data-duration="64.44"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-a4"
+        data-composition-id="a4"
+        data-composition-src="compositions/a4.html"
+        data-start="160.86"
+        data-duration="44.43"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+      <div
+        id="el-a5"
+        data-composition-id="a5"
+        data-composition-src="compositions/a5.html"
+        data-start="205.29"
+        data-duration="48.91"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <!-- ─── Voice lines (fish.audio s2.1-pro-free) ─── -->
+      <audio id="vo-a1_01" src="assets/voices/a1_01.mp3" data-start="3.0" data-duration="4.388" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a1_02" src="assets/voices/a1_02.mp3" data-start="8.18" data-duration="6.243" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a1_03" src="assets/voices/a1_03.mp3" data-start="15.43" data-duration="1.097" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a1_04" src="assets/voices/a1_04.mp3" data-start="17.22" data-duration="1.698" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a1_05" src="assets/voices/a1_05.mp3" data-start="19.72" data-duration="3.631" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a1_06" src="assets/voices/a1_06.mp3" data-start="23.75" data-duration="0.94" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a1_07" src="assets/voices/a1_07.mp3" data-start="25.49" data-duration="4.806" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a1_08" src="assets/voices/a1_08.mp3" data-start="30.8" data-duration="2.377" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a1_09" src="assets/voices/a1_09.mp3" data-start="34.28" data-duration="8.986" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a1_10" src="assets/voices/a1_10.mp3" data-start="43.86" data-duration="1.593" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a2_01" src="assets/voices/a2_01.mp3" data-start="47.85" data-duration="3.317" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a2_02" src="assets/voices/a2_02.mp3" data-start="51.97" data-duration="6.243" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a2_03" src="assets/voices/a2_03.mp3" data-start="58.91" data-duration="2.142" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a2_04" src="assets/voices/a2_04.mp3" data-start="61.66" data-duration="4.206" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a2_05" src="assets/voices/a2_05.mp3" data-start="66.36" data-duration="2.351" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a2_06" src="assets/voices/a2_06.mp3" data-start="69.21" data-duration="1.933" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a2_07" src="assets/voices/a2_07.mp3" data-start="72.15" data-duration="3.317" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a2_08" src="assets/voices/a2_08.mp3" data-start="76.06" data-duration="1.175" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a2_09" src="assets/voices/a2_09.mp3" data-start="77.74" data-duration="2.612" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a2_10" src="assets/voices/a2_10.mp3" data-start="81.15" data-duration="7.079" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a2_11" src="assets/voices/a2_11.mp3" data-start="89.03" data-duration="1.306" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a2_12" src="assets/voices/a2_12.mp3" data-start="91.54" data-duration="4.885" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a3_01" src="assets/voices/a3_01.mp3" data-start="98.62" data-duration="1.698" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a3_02" src="assets/voices/a3_02.mp3" data-start="100.82" data-duration="3.97" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a3_03" src="assets/voices/a3_03.mp3" data-start="105.79" data-duration="4.624" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a3_04" src="assets/voices/a3_04.mp3" data-start="111.21" data-duration="7.366" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a3_05" src="assets/voices/a3_05.mp3" data-start="119.48" data-duration="3.788" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a3_06" src="assets/voices/a3_06.mp3" data-start="123.87" data-duration="4.388" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a3_07" src="assets/voices/a3_07.mp3" data-start="129.25" data-duration="5.642" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a3_08" src="assets/voices/a3_08.mp3" data-start="135.8" data-duration="2.116" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a3_09" src="assets/voices/a3_09.mp3" data-start="138.71" data-duration="4.441" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a3_10" src="assets/voices/a3_10.mp3" data-start="143.95" data-duration="4.441" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a3_11" src="assets/voices/a3_11.mp3" data-start="149.3" data-duration="5.277" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a3_12" src="assets/voices/a3_12.mp3" data-start="155.27" data-duration="5.59" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a4_01" src="assets/voices/a4_01.mp3" data-start="162.86" data-duration="7.811" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a4_02" src="assets/voices/a4_02.mp3" data-start="171.37" data-duration="2.847" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a4_03" src="assets/voices/a4_03.mp3" data-start="174.62" data-duration="1.097" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a4_04" src="assets/voices/a4_04.mp3" data-start="176.12" data-duration="1.881" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a4_05" src="assets/voices/a4_05.mp3" data-start="179.0" data-duration="6.322" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a4_06" src="assets/voices/a4_06.mp3" data-start="186.02" data-duration="3.135" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a4_07" src="assets/voices/a4_07.mp3" data-start="190.16" data-duration="4.624" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a4_08" src="assets/voices/a4_08.mp3" data-start="195.08" data-duration="1.045" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a4_09" src="assets/voices/a4_09.mp3" data-start="197.32" data-duration="7.967" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a5_01" src="assets/voices/a5_01.mp3" data-start="207.69" data-duration="4.388" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a5_02" src="assets/voices/a5_02.mp3" data-start="212.98" data-duration="5.068" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a5_03" src="assets/voices/a5_03.mp3" data-start="218.85" data-duration="4.467" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a5_04" src="assets/voices/a5_04.mp3" data-start="224.11" data-duration="5.12" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a5_05" src="assets/voices/a5_05.mp3" data-start="230.23" data-duration="4.284" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a5_06" src="assets/voices/a5_06.mp3" data-start="235.72" data-duration="8.229" data-track-index="10" data-volume="0.97"></audio>
+      <audio id="vo-a5_07" src="assets/voices/a5_07.mp3" data-start="244.65" data-duration="1.228" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a5_08" src="assets/voices/a5_08.mp3" data-start="246.28" data-duration="1.724" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="vo-a5_09" src="assets/voices/a5_09.mp3" data-start="248.5" data-duration="1.698" data-track-index="10" data-volume="1.0"></audio>
+
+      <!-- ─── BGM (public domain, FreePD via archive.org) ─── -->
+      <audio id="bgm-uke" src="assets/bgm/happy_whistling_ukulele.mp3" data-start="0" data-duration="83.15" data-track-index="11" data-volume="0.16"></audio>
+      <audio id="bgm-sad" src="assets/bgm/dreamy_piano_fantasy.mp3" data-start="87.83" data-duration="73.03" data-track-index="11" data-volume="0.13"></audio>
+      <audio id="bgm-fun" src="assets/bgm/funshine.mp3" data-start="160.86" data-duration="93.34" data-track-index="11" data-volume="0.15"></audio>
+
+      <!-- ─── SFX (CC0, OpenGameArt) ─── -->
+      <audio id="sfx-00" src="assets/sfx/chime_s.mp3" data-start="0.6" data-duration="3.0" data-track-index="12" data-volume="0.5"></audio> <!-- title sparkle -->
+      <audio id="sfx-01" src="assets/sfx/boing_s.mp3" data-start="20.72" data-duration="1.4" data-track-index="12" data-volume="0.55"></audio> <!-- bounce 1 -->
+      <audio id="sfx-02" src="assets/sfx/boing_s.mp3" data-start="21.52" data-duration="1.4" data-track-index="13" data-volume="0.55"></audio> <!-- bounce 2 -->
+      <audio id="sfx-03" src="assets/sfx/boing_s.mp3" data-start="22.32" data-duration="1.4" data-track-index="12" data-volume="0.55"></audio> <!-- bounce 3 -->
+      <audio id="sfx-04" src="assets/sfx/boing_s.mp3" data-start="23.85" data-duration="1.4" data-track-index="12" data-volume="0.6"></audio> <!-- whee jump -->
+      <audio id="sfx-05" src="assets/sfx/pop_n.mp3" data-start="31.2" data-duration="0.3" data-track-index="12" data-volume="0.6"></audio> <!-- castle ta-da -->
+      <audio id="sfx-06" src="assets/sfx/whoosh_s.mp3" data-start="45.16" data-duration="1.8" data-track-index="12" data-volume="0.55"></audio> <!-- race off -->
+      <audio id="sfx-07" src="assets/sfx/thwack_n.mp3" data-start="82.7" data-duration="0.61" data-track-index="12" data-volume="0.8"></audio> <!-- castle crunch -->
+      <audio id="sfx-08" src="assets/sfx/chime_s.mp3" data-start="129.45" data-duration="3.0" data-track-index="12" data-volume="0.32"></audio> <!-- insight glow -->
+      <audio id="sfx-09" src="assets/sfx/pop_n.mp3" data-start="169.46" data-duration="0.3" data-track-index="12" data-volume="0.7"></audio> <!-- cloud pop -->
+      <audio id="sfx-10" src="assets/sfx/boing_s.mp3" data-start="180.2" data-duration="1.4" data-track-index="12" data-volume="0.5"></audio> <!-- build 1 -->
+      <audio id="sfx-11" src="assets/sfx/boing_s.mp3" data-start="181.6" data-duration="1.4" data-track-index="13" data-volume="0.5"></audio> <!-- build 2 -->
+      <audio id="sfx-12" src="assets/sfx/boing_s.mp3" data-start="183.0" data-duration="1.4" data-track-index="12" data-volume="0.5"></audio> <!-- build 3 -->
+      <audio id="sfx-13" src="assets/sfx/whoosh_s.mp3" data-start="191.36" data-duration="1.8" data-track-index="12" data-volume="0.6"></audio> <!-- slide train -->
+      <audio id="sfx-14" src="assets/sfx/chime_s.mp3" data-start="198.32" data-duration="3.0" data-track-index="12" data-volume="0.42"></audio> <!-- sun returns -->
+      <audio id="sfx-15" src="assets/sfx/pop_n.mp3" data-start="213.18" data-duration="0.3" data-track-index="12" data-volume="0.62"></audio> <!-- rule 1 -->
+      <audio id="sfx-16" src="assets/sfx/pop_n.mp3" data-start="219.05" data-duration="0.3" data-track-index="12" data-volume="0.62"></audio> <!-- rule 2 -->
+      <audio id="sfx-17" src="assets/sfx/pop_n.mp3" data-start="224.31" data-duration="0.3" data-track-index="12" data-volume="0.62"></audio> <!-- rule 3 -->
+      <audio id="sfx-18" src="assets/sfx/win_n.mp3" data-start="230.53" data-duration="3.79" data-track-index="12" data-volume="0.35"></audio> <!-- kindness jingle -->
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // BGM fades — soft bed under the voices, dies at the castle crunch,
+      // grieves on piano, comes back full sunshine for the turnaround.
+      tl.fromTo("#bgm-uke", { volume: 0.03 }, { volume: 0.16, duration: 2.0, ease: "sine.out" }, 0);
+      tl.to("#bgm-uke", { volume: 0.0, duration: 1.7, ease: "power2.in" }, 81.15);
+      tl.fromTo("#bgm-sad", { volume: 0.0 }, { volume: 0.13, duration: 2.5, ease: "sine.inOut" }, 87.83);
+      tl.to("#bgm-sad", { volume: 0.0, duration: 2.2, ease: "sine.in" }, 158.46);
+      tl.fromTo("#bgm-fun", { volume: 0.0 }, { volume: 0.15, duration: 1.8, ease: "sine.out" }, 160.86);
+      tl.to("#bgm-fun", { volume: 0.0, duration: 4.0, ease: "sine.in" }, 249.8);
+
+      window.__timelines["root"] = tl;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,270 @@
+{
+ "voices": {
+  "narrator": "1736fdc3798a4be696775e40de8f4187",
+  "pip": "4fcb3a423c61415fb35604eba567d95f",
+  "bean": "08b50a4cac844cea91a4b396bd1d10c3",
+  "milo": "d9ce1833c191476db346efb50aa20722"
+ },
+ "lines": [
+  {
+   "id": "a1_01",
+   "speaker": "narrator",
+   "text": "Hello hello, friends! Welcome back to Pip and Bean!"
+  },
+  {
+   "id": "a1_02",
+   "speaker": "narrator",
+   "text": "Today we're off to the sunniest place in town... the playground! And guess who's already here?"
+  },
+  {
+   "id": "a1_03",
+   "speaker": "pip",
+   "text": "I'm Pip!"
+  },
+  {
+   "id": "a1_04",
+   "speaker": "bean",
+   "text": "And I'm Bean!"
+  },
+  {
+   "id": "a1_05",
+   "speaker": "narrator",
+   "text": "Pip loves to bounce. Bounce, bounce, bounce!"
+  },
+  {
+   "id": "a1_06",
+   "speaker": "pip",
+   "text": "Wheeee!"
+  },
+  {
+   "id": "a1_07",
+   "speaker": "narrator",
+   "text": "And Bean loves to build. Castles, towers, anything at all!"
+  },
+  {
+   "id": "a1_08",
+   "speaker": "bean",
+   "text": "Ta-da! A sandcastle!"
+  },
+  {
+   "id": "a1_09",
+   "speaker": "narrator",
+   "text": "And right in the middle of the playground stands... the Great Big Slide! The shiniest, twistiest slide you've ever seen."
+  },
+  {
+   "id": "a1_10",
+   "speaker": "pip",
+   "text": "Race you to the top!"
+  },
+  {
+   "id": "a2_01",
+   "speaker": "narrator",
+   "text": "But wait. Who's that walking through the gate?"
+  },
+  {
+   "id": "a2_02",
+   "speaker": "narrator",
+   "text": "It's a new kid. His name is Milo. And hmm... he doesn't look very happy."
+  },
+  {
+   "id": "a2_03",
+   "speaker": "milo",
+   "text": "Out of my way! ME first!"
+  },
+  {
+   "id": "a2_04",
+   "speaker": "narrator",
+   "text": "Oh no. Milo pushed right to the front of the line!"
+  },
+  {
+   "id": "a2_05",
+   "speaker": "pip",
+   "text": "Hey! We were waiting our turn..."
+  },
+  {
+   "id": "a2_06",
+   "speaker": "milo",
+   "text": "Too bad! It's MY slide now."
+  },
+  {
+   "id": "a2_07",
+   "speaker": "narrator",
+   "text": "And that wasn't all. Down in the sandbox..."
+  },
+  {
+   "id": "a2_08",
+   "speaker": "milo",
+   "text": "Gimme that bucket!"
+  },
+  {
+   "id": "a2_09",
+   "speaker": "bean",
+   "text": "But... I was using it..."
+  },
+  {
+   "id": "a2_10",
+   "speaker": "narrator",
+   "text": "Oh dear. And then, crunch! Milo stomped right through Bean's beautiful sandcastle."
+  },
+  {
+   "id": "a2_11",
+   "speaker": "bean",
+   "text": "My castle..."
+  },
+  {
+   "id": "a2_12",
+   "speaker": "narrator",
+   "text": "The whole playground went quiet. Even the sun hid behind a cloud."
+  },
+  {
+   "id": "a3_01",
+   "speaker": "pip",
+   "text": "Bean, are you okay?"
+  },
+  {
+   "id": "a3_02",
+   "speaker": "bean",
+   "text": "I'm sad, Pip. Why is Milo so mean?"
+  },
+  {
+   "id": "a3_03",
+   "speaker": "narrator",
+   "text": "Pip thought, and thought... and then Pip looked over at Milo."
+  },
+  {
+   "id": "a3_04",
+   "speaker": "narrator",
+   "text": "Milo was sitting all alone under the big oak tree. No friends. No one to play with. Not even one."
+  },
+  {
+   "id": "a3_05",
+   "speaker": "pip",
+   "text": "Bean... look. Milo is all by himself."
+  },
+  {
+   "id": "a3_06",
+   "speaker": "bean",
+   "text": "Maybe... maybe he doesn't know HOW to make friends."
+  },
+  {
+   "id": "a3_07",
+   "speaker": "narrator",
+   "text": "Sometimes, when someone acts grumpy on the outside, they're really just lonely on the inside."
+  },
+  {
+   "id": "a3_08",
+   "speaker": "pip",
+   "text": "I have an idea. Come on!"
+  },
+  {
+   "id": "a3_09",
+   "speaker": "narrator",
+   "text": "So Pip and Bean took a deep breath, and walked right up to Milo."
+  },
+  {
+   "id": "a3_10",
+   "speaker": "pip",
+   "text": "Hi Milo! We're building a GIANT sandcastle. Want to help?"
+  },
+  {
+   "id": "a3_11",
+   "speaker": "milo",
+   "text": "You... want to play... with ME? But I was mean to you."
+  },
+  {
+   "id": "a3_12",
+   "speaker": "bean",
+   "text": "Everyone makes mistakes. Here, you can use my favorite bucket."
+  },
+  {
+   "id": "a4_01",
+   "speaker": "narrator",
+   "text": "And do you know what happened next? Milo's frown wibbled... and wobbled... and turned all the way upside down!"
+  },
+  {
+   "id": "a4_02",
+   "speaker": "milo",
+   "text": "I'm sorry I pushed. I'm sorry I grabbed. Can we start again?"
+  },
+  {
+   "id": "a4_03",
+   "speaker": "pip",
+   "text": "Of course!"
+  },
+  {
+   "id": "a4_04",
+   "speaker": "bean",
+   "text": "That's what friends do!"
+  },
+  {
+   "id": "a4_05",
+   "speaker": "narrator",
+   "text": "Together they built the biggest, tallest, sparkliest sandcastle the playground had ever seen."
+  },
+  {
+   "id": "a4_06",
+   "speaker": "milo",
+   "text": "And Bean, you put the flag on top. You're the best builder!"
+  },
+  {
+   "id": "a4_07",
+   "speaker": "narrator",
+   "text": "Then they zoomed down the Great Big Slide, all three together!"
+  },
+  {
+   "id": "a4_08",
+   "speaker": "pip",
+   "text": "Wheeee!"
+  },
+  {
+   "id": "a4_09",
+   "speaker": "narrator",
+   "text": "The sun came back out, warm and bright. Because kindness, my friends... kindness is sunshine you can share."
+  },
+  {
+   "id": "a5_01",
+   "speaker": "narrator",
+   "text": "So let's remember Pip and Bean's three magic moves for the playground."
+  },
+  {
+   "id": "a5_02",
+   "speaker": "narrator",
+   "text": "One: Take turns! Waiting is easier when we do it together."
+  },
+  {
+   "id": "a5_03",
+   "speaker": "narrator",
+   "text": "Two: Share! Toys are twice the fun with a friend."
+  },
+  {
+   "id": "a5_04",
+   "speaker": "narrator",
+   "text": "Three: Say sorry! A little sorry can fix a big mistake."
+  },
+  {
+   "id": "a5_05",
+   "speaker": "narrator",
+   "text": "Being kind turns a grumpy day... into a sunshine day!"
+  },
+  {
+   "id": "a5_06",
+   "speaker": "narrator",
+   "text": "Thanks for playing with us on Pip and Bean! Give a big thumbs up, and we'll see you next time. Say bye, everyone!"
+  },
+  {
+   "id": "a5_07",
+   "speaker": "pip",
+   "text": "Bye-bye!"
+  },
+  {
+   "id": "a5_08",
+   "speaker": "bean",
+   "text": "See you soon, friends!"
+  },
+  {
+   "id": "a5_09",
+   "speaker": "milo",
+   "text": "Bring your kindness!"
+  }
+ ]
+}

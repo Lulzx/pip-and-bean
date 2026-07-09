@@ -1,0 +1,31 @@
+# ── Rendered output & review artifacts ───────────────────────────
+renders/
+snapshots/
+
+# ── Media assets (large binaries, resolved/generated locally) ─────
+assets/
+audio/
+
+# ── Images / audio / video anywhere in the tree ──────────────────
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.mp4
+*.webm
+*.mov
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.woff
+*.woff2
+*.ttf
+*.otf
+
+# ── Tooling / OS cruft ───────────────────────────────────────────
+node_modules/
+.DS_Store
+*.log
+.debug/

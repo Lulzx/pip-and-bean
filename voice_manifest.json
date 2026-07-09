@@ -1,0 +1,366 @@
+[
+ {
+  "id": "a1_01",
+  "speaker": "narrator",
+  "text": "Hello hello, friends! Welcome back to Pip and Bean!",
+  "file": "assets/voices/a1_01.mp3",
+  "duration": 4.388
+ },
+ {
+  "id": "a1_02",
+  "speaker": "narrator",
+  "text": "Today we're off to the sunniest place in town... the playground! And guess who's already here?",
+  "file": "assets/voices/a1_02.mp3",
+  "duration": 6.243
+ },
+ {
+  "id": "a1_03",
+  "speaker": "pip",
+  "text": "I'm Pip!",
+  "file": "assets/voices/a1_03.mp3",
+  "duration": 1.097
+ },
+ {
+  "id": "a1_04",
+  "speaker": "bean",
+  "text": "And I'm Bean!",
+  "file": "assets/voices/a1_04.mp3",
+  "duration": 1.698
+ },
+ {
+  "id": "a1_05",
+  "speaker": "narrator",
+  "text": "Pip loves to bounce. Bounce, bounce, bounce!",
+  "file": "assets/voices/a1_05.mp3",
+  "duration": 3.631
+ },
+ {
+  "id": "a1_06",
+  "speaker": "pip",
+  "text": "Wheeee!",
+  "file": "assets/voices/a1_06.mp3",
+  "duration": 0.94
+ },
+ {
+  "id": "a1_07",
+  "speaker": "narrator",
+  "text": "And Bean loves to build. Castles, towers, anything at all!",
+  "file": "assets/voices/a1_07.mp3",
+  "duration": 4.806
+ },
+ {
+  "id": "a1_08",
+  "speaker": "bean",
+  "text": "Ta-da! A sandcastle!",
+  "file": "assets/voices/a1_08.mp3",
+  "duration": 2.377
+ },
+ {
+  "id": "a1_09",
+  "speaker": "narrator",
+  "text": "And right in the middle of the playground stands... the Great Big Slide! The shiniest, twistiest slide you've ever seen.",
+  "file": "assets/voices/a1_09.mp3",
+  "duration": 8.986
+ },
+ {
+  "id": "a1_10",
+  "speaker": "pip",
+  "text": "Race you to the top!",
+  "file": "assets/voices/a1_10.mp3",
+  "duration": 1.593
+ },
+ {
+  "id": "a2_01",
+  "speaker": "narrator",
+  "text": "But wait. Who's that walking through the gate?",
+  "file": "assets/voices/a2_01.mp3",
+  "duration": 3.317
+ },
+ {
+  "id": "a2_02",
+  "speaker": "narrator",
+  "text": "It's a new kid. His name is Milo. And hmm... he doesn't look very happy.",
+  "file": "assets/voices/a2_02.mp3",
+  "duration": 6.243
+ },
+ {
+  "id": "a2_03",
+  "speaker": "milo",
+  "text": "Out of my way! ME first!",
+  "file": "assets/voices/a2_03.mp3",
+  "duration": 2.142
+ },
+ {
+  "id": "a2_04",
+  "speaker": "narrator",
+  "text": "Oh no. Milo pushed right to the front of the line!",
+  "file": "assets/voices/a2_04.mp3",
+  "duration": 4.206
+ },
+ {
+  "id": "a2_05",
+  "speaker": "pip",
+  "text": "Hey! We were waiting our turn...",
+  "file": "assets/voices/a2_05.mp3",
+  "duration": 2.351
+ },
+ {
+  "id": "a2_06",
+  "speaker": "milo",
+  "text": "Too bad! It's MY slide now.",
+  "file": "assets/voices/a2_06.mp3",
+  "duration": 1.933
+ },
+ {
+  "id": "a2_07",
+  "speaker": "narrator",
+  "text": "And that wasn't all. Down in the sandbox...",
+  "file": "assets/voices/a2_07.mp3",
+  "duration": 3.317
+ },
+ {
+  "id": "a2_08",
+  "speaker": "milo",
+  "text": "Gimme that bucket!",
+  "file": "assets/voices/a2_08.mp3",
+  "duration": 1.175
+ },
+ {
+  "id": "a2_09",
+  "speaker": "bean",
+  "text": "But... I was using it...",
+  "file": "assets/voices/a2_09.mp3",
+  "duration": 2.612
+ },
+ {
+  "id": "a2_10",
+  "speaker": "narrator",
+  "text": "Oh dear. And then, crunch! Milo stomped right through Bean's beautiful sandcastle.",
+  "file": "assets/voices/a2_10.mp3",
+  "duration": 7.079
+ },
+ {
+  "id": "a2_11",
+  "speaker": "bean",
+  "text": "My castle...",
+  "file": "assets/voices/a2_11.mp3",
+  "duration": 1.306
+ },
+ {
+  "id": "a2_12",
+  "speaker": "narrator",
+  "text": "The whole playground went quiet. Even the sun hid behind a cloud.",
+  "file": "assets/voices/a2_12.mp3",
+  "duration": 4.885
+ },
+ {
+  "id": "a3_01",
+  "speaker": "pip",
+  "text": "Bean, are you okay?",
+  "file": "assets/voices/a3_01.mp3",
+  "duration": 1.698
+ },
+ {
+  "id": "a3_02",
+  "speaker": "bean",
+  "text": "I'm sad, Pip. Why is Milo so mean?",
+  "file": "assets/voices/a3_02.mp3",
+  "duration": 3.97
+ },
+ {
+  "id": "a3_03",
+  "speaker": "narrator",
+  "text": "Pip thought, and thought... and then Pip looked over at Milo.",
+  "file": "assets/voices/a3_03.mp3",
+  "duration": 4.624
+ },
+ {
+  "id": "a3_04",
+  "speaker": "narrator",
+  "text": "Milo was sitting all alone under the big oak tree. No friends. No one to play with. Not even one.",
+  "file": "assets/voices/a3_04.mp3",
+  "duration": 7.366
+ },
+ {
+  "id": "a3_05",
+  "speaker": "pip",
+  "text": "Bean... look. Milo is all by himself.",
+  "file": "assets/voices/a3_05.mp3",
+  "duration": 3.788
+ },
+ {
+  "id": "a3_06",
+  "speaker": "bean",
+  "text": "Maybe... maybe he doesn't know HOW to make friends.",
+  "file": "assets/voices/a3_06.mp3",
+  "duration": 4.388
+ },
+ {
+  "id": "a3_07",
+  "speaker": "narrator",
+  "text": "Sometimes, when someone acts grumpy on the outside, they're really just lonely on the inside.",
+  "file": "assets/voices/a3_07.mp3",
+  "duration": 5.642
+ },
+ {
+  "id": "a3_08",
+  "speaker": "pip",
+  "text": "I have an idea. Come on!",
+  "file": "assets/voices/a3_08.mp3",
+  "duration": 2.116
+ },
+ {
+  "id": "a3_09",
+  "speaker": "narrator",
+  "text": "So Pip and Bean took a deep breath, and walked right up to Milo.",
+  "file": "assets/voices/a3_09.mp3",
+  "duration": 4.441
+ },
+ {
+  "id": "a3_10",
+  "speaker": "pip",
+  "text": "Hi Milo! We're building a GIANT sandcastle. Want to help?",
+  "file": "assets/voices/a3_10.mp3",
+  "duration": 4.441
+ },
+ {
+  "id": "a3_11",
+  "speaker": "milo",
+  "text": "You... want to play... with ME? But I was mean to you.",
+  "file": "assets/voices/a3_11.mp3",
+  "duration": 5.277
+ },
+ {
+  "id": "a3_12",
+  "speaker": "bean",
+  "text": "Everyone makes mistakes. Here, you can use my favorite bucket.",
+  "file": "assets/voices/a3_12.mp3",
+  "duration": 5.59
+ },
+ {
+  "id": "a4_01",
+  "speaker": "narrator",
+  "text": "And do you know what happened next? Milo's frown wibbled... and wobbled... and turned all the way upside down!",
+  "file": "assets/voices/a4_01.mp3",
+  "duration": 7.811
+ },
+ {
+  "id": "a4_02",
+  "speaker": "milo",
+  "text": "I'm sorry I pushed. I'm sorry I grabbed. Can we start again?",
+  "file": "assets/voices/a4_02.mp3",
+  "duration": 2.847
+ },
+ {
+  "id": "a4_03",
+  "speaker": "pip",
+  "text": "Of course!",
+  "file": "assets/voices/a4_03.mp3",
+  "duration": 1.097
+ },
+ {
+  "id": "a4_04",
+  "speaker": "bean",
+  "text": "That's what friends do!",
+  "file": "assets/voices/a4_04.mp3",
+  "duration": 1.881
+ },
+ {
+  "id": "a4_05",
+  "speaker": "narrator",
+  "text": "Together they built the biggest, tallest, sparkliest sandcastle the playground had ever seen.",
+  "file": "assets/voices/a4_05.mp3",
+  "duration": 6.322
+ },
+ {
+  "id": "a4_06",
+  "speaker": "milo",
+  "text": "And Bean, you put the flag on top. You're the best builder!",
+  "file": "assets/voices/a4_06.mp3",
+  "duration": 3.135
+ },
+ {
+  "id": "a4_07",
+  "speaker": "narrator",
+  "text": "Then they zoomed down the Great Big Slide, all three together!",
+  "file": "assets/voices/a4_07.mp3",
+  "duration": 4.624
+ },
+ {
+  "id": "a4_08",
+  "speaker": "pip",
+  "text": "Wheeee!",
+  "file": "assets/voices/a4_08.mp3",
+  "duration": 1.045
+ },
+ {
+  "id": "a4_09",
+  "speaker": "narrator",
+  "text": "The sun came back out, warm and bright. Because kindness, my friends... kindness is sunshine you can share.",
+  "file": "assets/voices/a4_09.mp3",
+  "duration": 7.967
+ },
+ {
+  "id": "a5_01",
+  "speaker": "narrator",
+  "text": "So let's remember Pip and Bean's three magic moves for the playground.",
+  "file": "assets/voices/a5_01.mp3",
+  "duration": 4.388
+ },
+ {
+  "id": "a5_02",
+  "speaker": "narrator",
+  "text": "One: Take turns! Waiting is easier when we do it together.",
+  "file": "assets/voices/a5_02.mp3",
+  "duration": 5.068
+ },
+ {
+  "id": "a5_03",
+  "speaker": "narrator",
+  "text": "Two: Share! Toys are twice the fun with a friend.",
+  "file": "assets/voices/a5_03.mp3",
+  "duration": 4.467
+ },
+ {
+  "id": "a5_04",
+  "speaker": "narrator",
+  "text": "Three: Say sorry! A little sorry can fix a big mistake.",
+  "file": "assets/voices/a5_04.mp3",
+  "duration": 5.12
+ },
+ {
+  "id": "a5_05",
+  "speaker": "narrator",
+  "text": "Being kind turns a grumpy day... into a sunshine day!",
+  "file": "assets/voices/a5_05.mp3",
+  "duration": 4.284
+ },
+ {
+  "id": "a5_06",
+  "speaker": "narrator",
+  "text": "Thanks for playing with us on Pip and Bean! Give a big thumbs up, and we'll see you next time. Say bye, everyone!",
+  "file": "assets/voices/a5_06.mp3",
+  "duration": 8.229
+ },
+ {
+  "id": "a5_07",
+  "speaker": "pip",
+  "text": "Bye-bye!",
+  "file": "assets/voices/a5_07.mp3",
+  "duration": 1.228
+ },
+ {
+  "id": "a5_08",
+  "speaker": "bean",
+  "text": "See you soon, friends!",
+  "file": "assets/voices/a5_08.mp3",
+  "duration": 1.724
+ },
+ {
+  "id": "a5_09",
+  "speaker": "milo",
+  "text": "Bring your kindness!",
+  "file": "assets/voices/a5_09.mp3",
+  "duration": 1.698
+ }
+]
