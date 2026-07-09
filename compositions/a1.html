@@ -154,8 +154,8 @@
           <div class="ground"></div>
           <svg class="grass-tuft" style="left:180px" width="70" height="42"><path d="M8,42 Q4,16 0,10 M22,42 Q20,8 16,0 M36,42 Q38,12 44,4 M52,42 Q56,20 62,14" stroke="#5f9e3f" stroke-width="6" fill="none" stroke-linecap="round"/></svg>
           <svg class="grass-tuft" style="right:260px" width="70" height="42"><path d="M8,42 Q4,16 0,10 M22,42 Q20,8 16,0 M36,42 Q38,12 44,4 M52,42 Q56,20 62,14" stroke="#5f9e3f" stroke-width="6" fill="none" stroke-linecap="round"/></svg>
-          <div class="sandbox" style="right:150px"></div>
-          <div id="a1-castle" style="position:absolute;right:290px;bottom:130px;width:240px"></div>
+          <div class="sandbox" data-kit="sandbox" data-kit-sink="104" style="right:150px"></div>
+          <div id="a1-castle" data-kit="castle" data-kit-tiers="3" data-kit-flag data-kit-sink="70" style="position:absolute;right:290px;bottom:130px;width:240px"></div>
           <div id="a1-bucket" style="position:absolute;right:200px;bottom:120px;width:90px"></div>
           <svg id="a1-butterfly" style="position:absolute;left:500px;top:400px;width:56px;overflow:visible" viewBox="0 0 56 40">
             <g id="a1-bf-g"><ellipse cx="28" cy="22" rx="5" ry="12" fill="#4a3b2f"/><g class="wing-l"><ellipse cx="16" cy="16" rx="13" ry="11" fill="#ff9dbb" stroke="#4a3b2f" stroke-width="3"/></g><g class="wing-r"><ellipse cx="40" cy="16" rx="13" ry="11" fill="#ff9dbb" stroke="#4a3b2f" stroke-width="3"/></g></g>
@@ -178,7 +178,7 @@
           <div class="cloud-p" id="a1-cl3" style="top:150px;left:120px;width:210px"></div>
           <div class="hill" style="left:-360px;bottom:-210px;width:1300px;height:440px"></div>
           <div class="ground"></div>
-          <div id="a1-slide" style="position:absolute;left:490px;bottom:160px;width:950px"></div>
+          <div id="a1-slide" data-kit="slide" data-kit-sink="40" style="position:absolute;left:490px;bottom:160px;width:950px"></div>
           <svg id="a1-spark1" style="position:absolute;left:640px;top:180px;width:70px;overflow:visible" viewBox="0 0 40 40"><path d="M20,0 L24,16 L40,20 L24,24 L20,40 L16,24 L0,20 L16,16 Z" fill="#ffd34e" stroke="#e0a92e" stroke-width="2"/></svg>
           <svg id="a1-spark2" style="position:absolute;left:1310px;top:300px;width:52px;overflow:visible" viewBox="0 0 40 40"><path d="M20,0 L24,16 L40,20 L24,24 L20,40 L16,24 L0,20 L16,16 Z" fill="#fff" stroke="#e0a92e" stroke-width="2"/></svg>
           <svg id="a1-spark3" style="position:absolute;left:900px;top:120px;width:44px;overflow:visible" viewBox="0 0 40 40"><path d="M20,0 L24,16 L40,20 L24,24 L20,40 L16,24 L0,20 L16,16 Z" fill="#ffd34e" stroke="#e0a92e" stroke-width="2"/></svg>
@@ -285,13 +285,6 @@
             fill = fill || "#ffffff"; line = line || "#d8e6ee";
             return ('<svg viewBox="0 0 220 130" style="overflow:visible"><g><ellipse cx="70" cy="86" rx="52" ry="34" fill="' + fill + '" stroke="' + line + '" stroke-width="5"/><ellipse cx="130" cy="66" rx="58" ry="42" fill="' + fill + '" stroke="' + line + '" stroke-width="5"/><ellipse cx="172" cy="94" rx="42" ry="26" fill="' + fill + '" stroke="' + line + '" stroke-width="5"/><rect x="30" y="88" width="168" height="30" rx="15" fill="' + fill + '"/></g></svg>');
           }
-          function hfCastle() {
-            return ('<svg viewBox="0 0 240 200" style="overflow:visible">' +
-              '<g class="tier t1"><rect x="20" y="140" width="200" height="58" rx="10" fill="#e8c887" stroke="#c9a25c" stroke-width="5"/></g>' +
-              '<g class="tier t2"><rect x="55" y="86" width="130" height="60" rx="9" fill="#f2d8a0" stroke="#c9a25c" stroke-width="5"/></g>' +
-              '<g class="tier t3"><rect x="88" y="40" width="64" height="52" rx="8" fill="#e8c887" stroke="#c9a25c" stroke-width="5"/>' +
-              '<path d="M120,38 L120,6 L152,14 L120,22" fill="#f26d6d" stroke="#c0392b" stroke-width="4" stroke-linejoin="round"/></g></svg>');
-          }
           function hfBucket(color) {
             return ('<svg viewBox="0 0 90 80" style="overflow:visible"><path d="M10,18 L80,18 L68,74 L22,74 Z" fill="' + (color || "#7ec8e3") + '" stroke="#3f7f99" stroke-width="5" stroke-linejoin="round"/><ellipse cx="45" cy="18" rx="35" ry="9" fill="#a5dcef" stroke="#3f7f99" stroke-width="5"/></svg>');
           }
@@ -340,22 +333,9 @@
           $("a1-cl3").innerHTML = hfCloud();
           $("a1-pip").innerHTML = hfChar("pip", { mouth: "smile" });
           $("a1-bean").innerHTML = hfChar("bean", { mouth: "smile", blush: true });
-          $("a1-castle").innerHTML = hfCastle();
           $("a1-bucket").innerHTML = hfBucket();
           $("a1-s-pip").innerHTML = hfChar("pip", { mouth: "grin", look: 1 });
           $("a1-s-bean").innerHTML = hfChar("bean", { mouth: "o", look: 1 });
-          // big slide (P2 hero)
-          $("a1-slide").innerHTML =
-            '<svg viewBox="0 0 950 760" style="overflow:visible">' +
-            '<rect x="806" y="120" width="26" height="640" rx="12" fill="#e8b84b" stroke="#c49a2f" stroke-width="5"/>' +
-            '<rect x="716" y="120" width="26" height="640" rx="12" fill="#e8b84b" stroke="#c49a2f" stroke-width="5"/>' +
-            '<g stroke="#c49a2f" stroke-width="9" stroke-linecap="round">' +
-            '<line x1="722" y1="640" x2="836" y2="640"/><line x1="722" y1="520" x2="836" y2="520"/>' +
-            '<line x1="722" y1="400" x2="836" y2="400"/><line x1="722" y1="280" x2="836" y2="280"/><line x1="722" y1="180" x2="836" y2="180"/></g>' +
-            '<path d="M760,60 Q900,60 900,130 L830,130 Q810,110 760,110 Z" fill="#f26d6d" stroke="#c0392b" stroke-width="6"/>' +
-            '<path d="M40,720 C240,700 420,620 520,470 C600,350 640,220 700,140 L810,140 C760,240 720,380 640,520 C540,680 320,760 60,760 Z" fill="#f26d6d" stroke="#c0392b" stroke-width="7" stroke-linejoin="round"/>' +
-            '<path d="M60,742 C300,732 500,650 610,500" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.5"/>' +
-            '<path d="M718,120 L718,64 L788,80 L718,96" fill="#ffd34e" stroke="#c49a2f" stroke-width="5" stroke-linejoin="round"/></svg>';
 
           /* ───────── timeline ───────── */
           var tl = gsap.timeline({ paused: true });

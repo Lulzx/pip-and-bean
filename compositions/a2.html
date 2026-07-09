@@ -118,7 +118,7 @@
           <div class="cloud-p" id="a2-cl2" style="top:170px;left:640px;width:190px"></div>
           <div class="hill" style="left:-340px;bottom:-210px;width:1250px;height:430px"></div>
           <div class="ground"></div>
-          <div id="a2-slide" style="position:absolute;left:840px;bottom:150px;width:900px"></div>
+          <div id="a2-slide" data-kit="slide" data-kit-sink="50" style="position:absolute;left:840px;bottom:150px;width:900px"></div>
           <div class="char" id="a2-pip1" style="left:1180px;bottom:130px;width:270px"></div>
           <div class="char" id="a2-bean1" style="left:900px;bottom:126px;width:255px"></div>
           <div id="a2-milo-wrap1" style="position:absolute;left:60px;bottom:124px;width:300px">
@@ -138,8 +138,8 @@
           <div class="cloud-p" id="a2-cl3" style="top:140px;left:180px;width:210px"></div>
           <div class="hill" style="right:-360px;bottom:-210px;width:1250px;height:430px"></div>
           <div class="ground"></div>
-          <div class="sandbox" style="left:620px"></div>
-          <div id="a2-castle2" style="position:absolute;left:800px;bottom:135px;width:250px"></div>
+          <div class="sandbox" data-kit="sandbox" data-kit-sink="104" style="left:620px"></div>
+          <div id="a2-castle2" data-kit="castle" data-kit-tiers="3" data-kit-flag data-kit-sink="65" style="position:absolute;left:800px;bottom:135px;width:250px"></div>
           <div class="sand-p" id="a2-sp1" style="left:850px;bottom:220px;width:26px;height:26px"></div>
           <div class="sand-p" id="a2-sp2" style="left:930px;bottom:240px;width:20px;height:20px"></div>
           <div class="sand-p" id="a2-sp3" style="left:1010px;bottom:225px;width:30px;height:30px"></div>
@@ -250,23 +250,6 @@
             return '<svg viewBox="0 0 220 170" style="overflow:visible"><g><ellipse cx="70" cy="76" rx="52" ry="34" fill="#b7bec9" stroke="#939cab" stroke-width="5"/><ellipse cx="130" cy="56" rx="58" ry="42" fill="#b7bec9" stroke="#939cab" stroke-width="5"/><ellipse cx="172" cy="84" rx="42" ry="26" fill="#b7bec9" stroke="#939cab" stroke-width="5"/><rect x="30" y="78" width="168" height="30" rx="15" fill="#b7bec9"/></g>' +
               '<g class="drizzle" stroke="#7ec8e3" stroke-width="6" stroke-linecap="round"><line x1="70" y1="122" x2="62" y2="150"/><line x1="120" y1="126" x2="112" y2="154"/><line x1="168" y1="122" x2="160" y2="150"/></g></svg>';
           }
-          function hfSlide() {
-            return '<svg viewBox="0 0 950 760" style="overflow:visible">' +
-              '<rect x="806" y="120" width="26" height="640" rx="12" fill="#e8b84b" stroke="#c49a2f" stroke-width="5"/>' +
-              '<rect x="716" y="120" width="26" height="640" rx="12" fill="#e8b84b" stroke="#c49a2f" stroke-width="5"/>' +
-              '<g stroke="#c49a2f" stroke-width="9" stroke-linecap="round"><line x1="722" y1="640" x2="836" y2="640"/><line x1="722" y1="520" x2="836" y2="520"/><line x1="722" y1="400" x2="836" y2="400"/><line x1="722" y1="280" x2="836" y2="280"/><line x1="722" y1="180" x2="836" y2="180"/></g>' +
-              '<path d="M760,60 Q900,60 900,130 L830,130 Q810,110 760,110 Z" fill="#f26d6d" stroke="#c0392b" stroke-width="6"/>' +
-              '<path d="M40,720 C240,700 420,620 520,470 C600,350 640,220 700,140 L810,140 C760,240 720,380 640,520 C540,680 320,760 60,760 Z" fill="#f26d6d" stroke="#c0392b" stroke-width="7" stroke-linejoin="round"/>' +
-              '<path d="M60,742 C300,732 500,650 610,500" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.5"/>' +
-              '<path d="M718,120 L718,64 L788,80 L718,96" fill="#ffd34e" stroke="#c49a2f" stroke-width="5" stroke-linejoin="round"/></svg>';
-          }
-          function hfCastle() {
-            return '<svg viewBox="0 0 240 200" style="overflow:visible">' +
-              '<g class="tier t1"><rect x="20" y="140" width="200" height="58" rx="10" fill="#e8c887" stroke="#c9a25c" stroke-width="5"/></g>' +
-              '<g class="tier t2"><rect x="55" y="86" width="130" height="60" rx="9" fill="#f2d8a0" stroke="#c9a25c" stroke-width="5"/></g>' +
-              '<g class="tier t3"><rect x="88" y="40" width="64" height="52" rx="8" fill="#e8c887" stroke="#c9a25c" stroke-width="5"/>' +
-              '<path d="M120,38 L120,6 L152,14 L120,22" fill="#f26d6d" stroke="#c0392b" stroke-width="4" stroke-linejoin="round"/></g></svg>';
-          }
           function hfBucket(color) {
             return '<svg viewBox="0 0 90 80" style="overflow:visible"><path d="M10,18 L80,18 L68,74 L22,74 Z" fill="' + (color || "#7ec8e3") + '" stroke="#3f7f99" stroke-width="5" stroke-linejoin="round"/><ellipse cx="45" cy="18" rx="35" ry="9" fill="#a5dcef" stroke="#3f7f99" stroke-width="5"/></svg>';
           }
@@ -304,8 +287,6 @@
           $("a2-pip1").innerHTML = hfChar("pip", { mouth: "o", look: -1 });
           $("a2-bean1").innerHTML = hfChar("bean", { mouth: "o", look: -1 });
           $("a2-milo1").innerHTML = hfChar("milo", { mouth: "grin", brows: "angry" });
-          $("a2-slide").innerHTML = hfSlide();
-          $("a2-castle2").innerHTML = hfCastle();
           $("a2-bucket2").innerHTML = hfBucket();
           $("a2-bean2").innerHTML = hfChar("bean", { mouth: "smile", blush: true });
           $("a2-bean2sad").innerHTML = hfChar("bean", { mouth: "sad", brows: "sadb" });

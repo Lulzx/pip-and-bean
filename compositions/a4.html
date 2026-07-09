@@ -115,8 +115,8 @@
           <div class="cloud-p" id="a4-cl1" style="top:150px;left:200px;width:210px"></div>
           <div class="hill" style="right:-360px;bottom:-210px;width:1250px;height:430px"></div>
           <div class="ground"></div>
-          <div class="sandbox" style="left:600px"></div>
-          <div id="a4-megacastle" style="position:absolute;left:740px;bottom:135px;width:430px"></div>
+          <div class="sandbox" data-kit="sandbox" data-kit-sink="104" style="left:600px"></div>
+          <div id="a4-megacastle" data-kit="castle" data-kit-tiers="4" data-kit-sink="65" style="position:absolute;left:740px;bottom:135px;width:430px"></div>
           <svg id="a4-spk1" style="position:absolute;left:700px;top:260px;width:56px;overflow:visible" viewBox="0 0 40 40"><path d="M20,0 L24,16 L40,20 L24,24 L20,40 L16,24 L0,20 L16,16 Z" fill="#ffd34e" stroke="#e0a92e" stroke-width="2"/></svg>
           <svg id="a4-spk2" style="position:absolute;left:1210px;top:330px;width:44px;overflow:visible" viewBox="0 0 40 40"><path d="M20,0 L24,16 L40,20 L24,24 L20,40 L16,24 L0,20 L16,16 Z" fill="#fff" stroke="#e0a92e" stroke-width="2"/></svg>
           <div class="char" id="a4-pip-b" style="left:360px;bottom:128px;width:260px"></div>
@@ -135,7 +135,7 @@
           <div class="char" id="a4-sun2" style="top:60px;right:130px;width:180px"></div>
           <div class="hill" style="left:-340px;bottom:-210px;width:1250px;height:430px"></div>
           <div class="ground"></div>
-          <div id="a4-slide" style="position:absolute;left:490px;bottom:160px;width:950px"></div>
+          <div id="a4-slide" data-kit="slide" data-kit-sink="40" style="position:absolute;left:490px;bottom:160px;width:950px"></div>
           <div class="speedline" id="a4-sl1" style="left:700px;top:480px;width:190px"></div>
           <div class="speedline" id="a4-sl2" style="left:820px;top:560px;width:150px"></div>
           <div class="speedline" id="a4-sl3" style="left:640px;top:650px;width:210px"></div>
@@ -246,23 +246,6 @@
             fill = fill || "#ffffff"; line = line || "#d8e6ee";
             return '<svg viewBox="0 0 220 130" style="overflow:visible"><g><ellipse cx="70" cy="86" rx="52" ry="34" fill="' + fill + '" stroke="' + line + '" stroke-width="5"/><ellipse cx="130" cy="66" rx="58" ry="42" fill="' + fill + '" stroke="' + line + '" stroke-width="5"/><ellipse cx="172" cy="94" rx="42" ry="26" fill="' + fill + '" stroke="' + line + '" stroke-width="5"/><rect x="30" y="88" width="168" height="30" rx="15" fill="' + fill + '"/></g></svg>';
           }
-          function hfSlide() {
-            return '<svg viewBox="0 0 950 760" style="overflow:visible">' +
-              '<rect x="806" y="120" width="26" height="640" rx="12" fill="#e8b84b" stroke="#c49a2f" stroke-width="5"/>' +
-              '<rect x="716" y="120" width="26" height="640" rx="12" fill="#e8b84b" stroke="#c49a2f" stroke-width="5"/>' +
-              '<g stroke="#c49a2f" stroke-width="9" stroke-linecap="round"><line x1="722" y1="640" x2="836" y2="640"/><line x1="722" y1="520" x2="836" y2="520"/><line x1="722" y1="400" x2="836" y2="400"/><line x1="722" y1="280" x2="836" y2="280"/><line x1="722" y1="180" x2="836" y2="180"/></g>' +
-              '<path d="M760,60 Q900,60 900,130 L830,130 Q810,110 760,110 Z" fill="#f26d6d" stroke="#c0392b" stroke-width="6"/>' +
-              '<path d="M40,720 C240,700 420,620 520,470 C600,350 640,220 700,140 L810,140 C760,240 720,380 640,520 C540,680 320,760 60,760 Z" fill="#f26d6d" stroke="#c0392b" stroke-width="7" stroke-linejoin="round"/>' +
-              '<path d="M60,742 C300,732 500,650 610,500" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.5"/>' +
-              '<path d="M718,120 L718,64 L788,80 L718,96" fill="#ffd34e" stroke="#c49a2f" stroke-width="5" stroke-linejoin="round"/></svg>';
-          }
-          function hfMegaCastle() {
-            return '<svg viewBox="0 0 430 330" style="overflow:visible">' +
-              '<g class="tier t1"><rect x="15" y="252" width="400" height="76" rx="12" fill="#e8c887" stroke="#c9a25c" stroke-width="6"/><rect x="40" y="234" width="34" height="26" rx="6" fill="#e8c887" stroke="#c9a25c" stroke-width="5"/><rect x="356" y="234" width="34" height="26" rx="6" fill="#e8c887" stroke="#c9a25c" stroke-width="5"/></g>' +
-              '<g class="tier t2"><rect x="70" y="164" width="290" height="94" rx="11" fill="#f2d8a0" stroke="#c9a25c" stroke-width="6"/><rect x="96" y="146" width="30" height="24" rx="6" fill="#f2d8a0" stroke="#c9a25c" stroke-width="5"/><rect x="304" y="146" width="30" height="24" rx="6" fill="#f2d8a0" stroke="#c9a25c" stroke-width="5"/></g>' +
-              '<g class="tier t3"><rect x="130" y="84" width="170" height="86" rx="10" fill="#e8c887" stroke="#c9a25c" stroke-width="6"/></g>' +
-              '<g class="tier t4"><rect x="178" y="26" width="74" height="64" rx="9" fill="#f2d8a0" stroke="#c9a25c" stroke-width="6"/></g></svg>';
-          }
           function talk(tl, sel, t, dur) {
             var n = Math.max(1, Math.floor(dur / 0.3));
             tl.to(sel + " .mouth", { scaleY: 0.5, transformOrigin: "50% 30%", duration: 0.15, ease: "sine.inOut", yoyo: true, repeat: 2 * n - 1 }, t);
@@ -290,11 +273,9 @@
           $("a4-sun2").innerHTML = hfSun();
           $("a4-sun3").innerHTML = hfSun();
           $("a4-cl1").innerHTML = hfCloud();
-          $("a4-megacastle").innerHTML = hfMegaCastle();
           $("a4-pip-b").innerHTML = hfChar("pip", { mouth: "grin", look: 1 });
           $("a4-bean-b").innerHTML = hfChar("bean", { mouth: "grin", look: -1, blush: true });
           $("a4-milo-b").innerHTML = hfChar("milo", { mouth: "grin", look: -1, blush: true, c1: "#9b7be0", c2: "#6d51a8", cap: "#ffd34e" });
-          $("a4-slide").innerHTML = hfSlide();
           $("a4-pip-s").innerHTML = hfChar("pip", { mouth: "grin" });
           $("a4-bean-s").innerHTML = hfChar("bean", { mouth: "grin", blush: true });
           $("a4-milo-s").innerHTML = hfChar("milo", { mouth: "grin", blush: true, c1: "#9b7be0", c2: "#6d51a8", cap: "#ffd34e" });

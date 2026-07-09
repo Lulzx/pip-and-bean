@@ -28,6 +28,10 @@ seek-safe compositions that render straight to MP4.
   every ground line, and everything sways in an analytic, seek-safe wind. Generated
   props measure the real `.ground` element and plant themselves on it — grounding is
   guaranteed by construction, never by hand-typed pixel offsets.
+- **Single-sourced props** — the slide, sandcastles, and sandboxes are kit-built too
+  (`data-kit="slide|castle|sandbox"` + a `data-kit-sink` depth): one canonical slide
+  instead of three copies, castles with seeded sand speckles and wind-swayed pennants,
+  sandboxes scattered with seeded pebbles and a starfish.
 - **Playful transitions** — circle-iris wipes, vertical pushes, and a blur crossfade for
   the sad wind-down.
 - **Full voiceover + music + SFX** — narrator, Pip, Bean, and Milo, over soft CC0 music

@@ -88,8 +88,8 @@
           <div class="cloud-p" id="a3-cl1" style="top:180px;left:300px;width:200px"></div>
           <div class="hill" style="right:-360px;bottom:-210px;width:1250px;height:430px"></div>
           <div class="ground"></div>
-          <div class="sandbox" style="left:620px"></div>
-          <div id="a3-castle-squash" style="position:absolute;left:800px;bottom:135px;width:250px;transform:scaleY(0.16) scaleX(1.35);transform-origin:50% 100%"></div>
+          <div class="sandbox" data-kit="sandbox" data-kit-sink="104" style="left:620px"></div>
+          <div id="a3-castle-squash" data-kit="castle" data-kit-tiers="3" data-kit-flag data-kit-sink="65" style="position:absolute;left:800px;bottom:135px;width:250px;transform:scaleY(0.16) scaleX(1.35);transform-origin:50% 100%"></div>
           <div id="a3-bucket0" style="position:absolute;left:1295px;bottom:70px;width:95px;transform:rotate(12deg)"></div>
           <div class="char" id="a3-bean0" style="left:520px;bottom:126px;width:280px"></div>
           <div class="char" id="a3-pip0" style="left:230px;bottom:130px;width:290px"></div>
@@ -242,13 +242,6 @@
             return '<svg viewBox="0 0 220 170" style="overflow:visible"><g><ellipse cx="70" cy="76" rx="52" ry="34" fill="#b7bec9" stroke="#939cab" stroke-width="5"/><ellipse cx="130" cy="56" rx="58" ry="42" fill="#b7bec9" stroke="#939cab" stroke-width="5"/><ellipse cx="172" cy="84" rx="42" ry="26" fill="#b7bec9" stroke="#939cab" stroke-width="5"/><rect x="30" y="78" width="168" height="30" rx="15" fill="#b7bec9"/></g>' +
               '<g class="drizzle" stroke="#7ec8e3" stroke-width="6" stroke-linecap="round"><line x1="70" y1="122" x2="62" y2="150"/><line x1="120" y1="126" x2="112" y2="154"/><line x1="168" y1="122" x2="160" y2="150"/></g></svg>';
           }
-          function hfCastle() {
-            return '<svg viewBox="0 0 240 200" style="overflow:visible">' +
-              '<g class="tier t1"><rect x="20" y="140" width="200" height="58" rx="10" fill="#e8c887" stroke="#c9a25c" stroke-width="5"/></g>' +
-              '<g class="tier t2"><rect x="55" y="86" width="130" height="60" rx="9" fill="#f2d8a0" stroke="#c9a25c" stroke-width="5"/></g>' +
-              '<g class="tier t3"><rect x="88" y="40" width="64" height="52" rx="8" fill="#e8c887" stroke="#c9a25c" stroke-width="5"/>' +
-              '<path d="M120,38 L120,6 L152,14 L120,22" fill="#f26d6d" stroke="#c0392b" stroke-width="4" stroke-linejoin="round"/></g></svg>';
-          }
           function hfBucket(color) {
             return '<svg viewBox="0 0 90 80" style="overflow:visible"><path d="M10,18 L80,18 L68,74 L22,74 Z" fill="' + (color || "#7ec8e3") + '" stroke="#3f7f99" stroke-width="5" stroke-linejoin="round"/><ellipse cx="45" cy="18" rx="35" ry="9" fill="#a5dcef" stroke="#3f7f99" stroke-width="5"/></svg>';
           }
@@ -274,7 +267,6 @@
           $("a3-gray2").innerHTML = hfCloud("#aeb6c2", "#8b94a4");
           $("a3-gray3").innerHTML = hfCloud("#aeb6c2", "#8b94a4");
           $("a3-cl1").innerHTML = hfCloud();
-          $("a3-castle-squash").innerHTML = hfCastle();
           $("a3-bucket0").innerHTML = hfBucket();
           $("a3-bucket3").innerHTML = hfBucket();
           $("a3-pip0").innerHTML = hfChar("pip", { mouth: "sad", brows: "sadb", look: 1 });
